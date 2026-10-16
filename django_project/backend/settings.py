@@ -52,9 +52,10 @@ ALLOWED_HOSTS = ["*"]
 # Google Ids
 
 # GOOGLE_OAUTH_CALLBACK_URL='http://localhost:4200/google-callback'
-# GOOGLE_OAUTH_CALLBACK_URL='https://bas-3nw9.onrender.com/google-callback'
-GOOGLE_OAUTH_CALLBACK_URL = "https://sellbuypatent.com/google-callback"
-# GOOGLE_OAUTH_CALLBACK_URL='http://ec2-3-144-99-241.us-east-2.compute.amazonaws.com/google-callback'
+GOOGLE_OAUTH_CALLBACK_URL = os.getenv(
+    "GOOGLE_OAUTH_CALLBACK_URL",
+    "https://buyandsell-frontend-6uf8.onrender.com/google-callback",
+)
 
 # Application definition
 
@@ -132,19 +133,21 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = "none"  # Do not require email confirmation
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",  # Add your Angular app URL
+    "http://localhost:4200",
+    "https://buyandsell-frontend-6uf8.onrender.com",
+    "https://buyandsell-backend-74mg.onrender.com",
     "http://ec2-3-144-99-241.us-east-2.compute.amazonaws.com",
     "https://bas-3nw9.onrender.com",
     "https://sellbuypatent.com",
     "https://www.sellbuypatent.com",
     "http://sellbuypatent-frontend.s3-website-us-east-1.amazonaws.com",
     "https://hba62kd2ksjp72b46igtad3bta0volhy.lambda-url.us-east-1.on.aws",
-    # "sellbuypatent.com",
-    # "www.sellbuypatent.com",
 ]
 CORS_ALLOW_CREDENTIALS = True
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:4200",
+    "https://buyandsell-frontend-6uf8.onrender.com",
+    "https://buyandsell-backend-74mg.onrender.com",
     "http://ec2-3-144-99-241.us-east-2.compute.amazonaws.com",
     "https://bas-3nw9.onrender.com",
     "https://sellbuypatent.com",
@@ -152,8 +155,6 @@ CSRF_TRUSTED_ORIGINS = [
     "https://api.sellbuypatent.com",
     "http://sellbuypatent-frontend.s3-website-us-east-1.amazonaws.com",
     "https://bp6fqe0ma0.execute-api.us-east-1.amazonaws.com",
-    # "www.sellbuypatent.com",
-    # "sellbuypatent.com",
 ]
 CORS_ALLOW_METHODS = [
     "GET",
