@@ -271,14 +271,41 @@ import os
 #     }
 # }
 
+import urllib.parse
+
 database_url = os.getenv("DATABASE_URL")
 if database_url:
+    # Auto-encode '@' in password if present
+    if "://" in database_url and database_url.count("@") > 1:
+        prefix, rest = database_url.split("://", 1)
+        last_at = rest.rfind("@")
+        user_pass = rest[:last_at]
+        host_db = rest[last_at + 1:]
+        if ":" in user_pass:
+            user, pwd = user_pass.split(":", 1)
+            pwd_encoded = urllib.parse.quote(pwd)
+            database_url = f"{prefix}://{user}:{pwd_encoded}@{host_db}"
+
     DATABASES = {
         "default": dj_database_url.config(
             default=database_url,
             conn_max_age=600,
             ssl_require=True,
         )
+    }
+elif os.getenv("DB_HOST"):
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.getenv("DB_NAME", "postgres"),
+            "USER": os.getenv("DB_USER"),
+            "PASSWORD": os.getenv("DB_PASSWORD"),
+            "HOST": os.getenv("DB_HOST"),
+            "PORT": os.getenv("DB_PORT", "6543"),
+            "OPTIONS": {
+                "sslmode": "require",
+            },
+        }
     }
 else:
     DATABASES = {
