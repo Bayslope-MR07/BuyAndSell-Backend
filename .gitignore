@@ -1,0 +1,17 @@
+
+# Frontend ignores
+BAS-project/node_modules/
+BAS-project/build/
+ 
+# Backend ignores
+
+django_project/env/
+django_project/.venv/
+*.env
+.env
+django_project/.env
+ 
+# General ignores
+*.log
+*.pyc
+__pycache__/

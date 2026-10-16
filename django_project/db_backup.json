@@ -1,0 +1,978 @@
+[
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "accounts",
+        "model": "customuser"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "accounts",
+        "model": "sellerform"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "accounts",
+        "model": "patentfeedback"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "accounts",
+        "model": "formuploads"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sites",
+        "model": "site"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "authtoken",
+        "model": "token"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "authtoken",
+        "model": "tokenproxy"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "token_blacklist",
+        "model": "blacklistedtoken"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "token_blacklist",
+        "model": "outstandingtoken"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "account",
+        "model": "emailaddress"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "account",
+        "model": "emailconfirmation"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialaccount"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialapp"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialtoken"
+    }
+},
+{
+    "model": "sites.site",
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add custom user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "add_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change custom user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "change_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete custom user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "delete_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view custom user",
+        "content_type": [
+            "accounts",
+            "customuser"
+        ],
+        "codename": "view_customuser"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add seller form",
+        "content_type": [
+            "accounts",
+            "sellerform"
+        ],
+        "codename": "add_sellerform"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change seller form",
+        "content_type": [
+            "accounts",
+            "sellerform"
+        ],
+        "codename": "change_sellerform"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete seller form",
+        "content_type": [
+            "accounts",
+            "sellerform"
+        ],
+        "codename": "delete_sellerform"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view seller form",
+        "content_type": [
+            "accounts",
+            "sellerform"
+        ],
+        "codename": "view_sellerform"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add patent feedback",
+        "content_type": [
+            "accounts",
+            "patentfeedback"
+        ],
+        "codename": "add_patentfeedback"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change patent feedback",
+        "content_type": [
+            "accounts",
+            "patentfeedback"
+        ],
+        "codename": "change_patentfeedback"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete patent feedback",
+        "content_type": [
+            "accounts",
+            "patentfeedback"
+        ],
+        "codename": "delete_patentfeedback"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view patent feedback",
+        "content_type": [
+            "accounts",
+            "patentfeedback"
+        ],
+        "codename": "view_patentfeedback"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add form uploads",
+        "content_type": [
+            "accounts",
+            "formuploads"
+        ],
+        "codename": "add_formuploads"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change form uploads",
+        "content_type": [
+            "accounts",
+            "formuploads"
+        ],
+        "codename": "change_formuploads"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete form uploads",
+        "content_type": [
+            "accounts",
+            "formuploads"
+        ],
+        "codename": "delete_formuploads"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view form uploads",
+        "content_type": [
+            "accounts",
+            "formuploads"
+        ],
+        "codename": "view_formuploads"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add site",
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "codename": "add_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change site",
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "codename": "change_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete site",
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "codename": "delete_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view site",
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "codename": "view_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "add_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "change_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "delete_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view Token",
+        "content_type": [
+            "authtoken",
+            "token"
+        ],
+        "codename": "view_token"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "add_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "change_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "delete_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view Token",
+        "content_type": [
+            "authtoken",
+            "tokenproxy"
+        ],
+        "codename": "view_tokenproxy"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "add_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "change_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "delete_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view blacklisted token",
+        "content_type": [
+            "token_blacklist",
+            "blacklistedtoken"
+        ],
+        "codename": "view_blacklistedtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "add_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "change_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "delete_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view outstanding token",
+        "content_type": [
+            "token_blacklist",
+            "outstandingtoken"
+        ],
+        "codename": "view_outstandingtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add email address",
+        "content_type": [
+            "account",
+            "emailaddress"
+        ],
+        "codename": "add_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change email address",
+        "content_type": [
+            "account",
+            "emailaddress"
+        ],
+        "codename": "change_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete email address",
+        "content_type": [
+            "account",
+            "emailaddress"
+        ],
+        "codename": "delete_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view email address",
+        "content_type": [
+            "account",
+            "emailaddress"
+        ],
+        "codename": "view_emailaddress"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add email confirmation",
+        "content_type": [
+            "account",
+            "emailconfirmation"
+        ],
+        "codename": "add_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change email confirmation",
+        "content_type": [
+            "account",
+            "emailconfirmation"
+        ],
+        "codename": "change_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete email confirmation",
+        "content_type": [
+            "account",
+            "emailconfirmation"
+        ],
+        "codename": "delete_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view email confirmation",
+        "content_type": [
+            "account",
+            "emailconfirmation"
+        ],
+        "codename": "view_emailconfirmation"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add social account",
+        "content_type": [
+            "socialaccount",
+            "socialaccount"
+        ],
+        "codename": "add_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change social account",
+        "content_type": [
+            "socialaccount",
+            "socialaccount"
+        ],
+        "codename": "change_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete social account",
+        "content_type": [
+            "socialaccount",
+            "socialaccount"
+        ],
+        "codename": "delete_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view social account",
+        "content_type": [
+            "socialaccount",
+            "socialaccount"
+        ],
+        "codename": "view_socialaccount"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add social application",
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "codename": "add_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change social application",
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "codename": "change_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete social application",
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "codename": "delete_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view social application",
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "codename": "view_socialapp"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add social application token",
+        "content_type": [
+            "socialaccount",
+            "socialtoken"
+        ],
+        "codename": "add_socialtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change social application token",
+        "content_type": [
+            "socialaccount",
+            "socialtoken"
+        ],
+        "codename": "change_socialtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete social application token",
+        "content_type": [
+            "socialaccount",
+            "socialtoken"
+        ],
+        "codename": "delete_socialtoken"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view social application token",
+        "content_type": [
+            "socialaccount",
+            "socialtoken"
+        ],
+        "codename": "view_socialtoken"
+    }
+}
+]
